@@ -1,6 +1,4 @@
-import logo from './logo.svg';
 import './App.css';
-import Navbar from './components/Navbar/Navbar';
 import FirstHeader from './components/FirstHeader/FirstHeader';
 import Topics from './components/Topics/Topics';
 import Posts from './components/Posts/Posts';

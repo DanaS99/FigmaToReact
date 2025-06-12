@@ -6,8 +6,7 @@ const Navbar = () => {
 
   return (
     <div>
-      {/* Main Navigation for Larger Screens */}
-      <nav className={`h-16 p-5 text-lg fixed text-center flex justify-between bg-headerbgbox backdrop-blur-xl rounded-t-none rounded-b-xl w-full top-0 text-white ${isActive ? 'hidden' : 'flex'} lg:w-2/3 xxs:top-6 xs:w-5/6 md:left-20 sm:left-20 xs:left-11 xxs:w-5/6 xxs:left-7 lg:left-60 lg:right-auto `}>
+      <nav className={`h-16 p-5 text-lg fixed text-center flex justify-between bg-headerbgbox backdrop-blur-xl rounded-t-none rounded-b-xl w-full top-0 text-white ${isActive ? 'hidden' : 'flex'} lg:w-2/3 xxs:top-6 xs:w-5/6 md:left-20 sm:left-20 xs:left-11 xxs:w-5/6 xxs:left-7 lg:left-60 lg:right-auto z-50`}>
         <a className='text-lg font-semibold' href='#'>
           Sound<span className='text-buttonColor font-extrabold'>DZign</span>
         </a>
@@ -26,7 +25,6 @@ const Navbar = () => {
           </li>
         </ul>
 
-        {/* Hamburger Icon for Small Screens */}
         <div onClick={() => setIsActive(true)} className='lg:hidden flex items-center'>
           <img src={menu} alt='menu' className='h-6 w-6' /> 
         </div>

@@ -3,34 +3,34 @@ import { fb, insta, twitter } from '../../assets';
 
 function Footer() {
   return (
-    <footer className='bg-black text-white py-20 px-5 sm:px-10 md:px-20 lg:px-28 '>
-    <div className='container mx-auto flex flex-col lg:flex-row justify-between items-center lg:items-start px-4 lg:px-20 xl:px-32 space-y-6 lg:space-y-0'>
+    <footer className='px-5 py-20 text-white bg-black sm:px-10 md:px-20 lg:px-28 '>
+    <div className='container flex flex-col items-center justify-between px-4 mx-auto space-y-6 lg:flex-row lg:items-start lg:px-20 xl:px-32 lg:space-y-0'>
       {/* Left Section */}
-      <div className='flex flex-col items-center lg:items-start space-y-4'>
-        <h2 className='text-red-600 font-bold'>SoundDZign</h2>
+      <div className='flex flex-col items-center space-y-4 lg:items-start'>
+        <h2 className='font-bold text-red-600'>SoundDZign</h2>
         <div className='flex space-x-4'>
-          <a href=''>
+          <button>
             <img src={fb} alt='Facebook'></img>
-          </a>
-          <a href=''>
+          </button>
+          <button>
             <img src={twitter} alt='Twitter'></img>
-          </a>
-          <a href=''>
+          </button>
+          <button>
             <img src={insta} alt='Instagram'></img>
-          </a>
+          </button>
         </div>
       </div>
   
       {/* Center Section */}
       <div className='flex flex-col items-center space-y-4'>
-        <h2 className='text-buttonColor font-alegreya non-italic font-bold text-lg'>
+        <h2 className='text-lg font-bold text-buttonColor font-alegreya non-italic'>
           Quick Links
         </h2>
         <ul>
           <li>
             <a
               href='#'
-              className='font-alegreya non-italic font-bold text-base mb-0 pb-0 hover:underline'
+              className='pb-0 mb-0 text-base font-bold font-alegreya non-italic hover:underline'
             >
               Join Us
             </a>
@@ -38,7 +38,7 @@ function Footer() {
           <li>
             <a
               href='#'
-              className='font-alegreya non-italic font-bold text-base mt-0 pt-0 hover:underline'
+              className='pt-0 mt-0 text-base font-bold font-alegreya non-italic hover:underline'
             >
               Join Us
             </a>
@@ -47,15 +47,15 @@ function Footer() {
       </div>
   
       {/* Right Section */}
-      <div className='flex flex-col items-center lg:items-end space-y-4'>
-        <h2 className='text-buttonColor font-alegreya non-italic font-bold text-lg'>
+      <div className='flex flex-col items-center space-y-4 lg:items-end'>
+        <h2 className='text-lg font-bold text-buttonColor font-alegreya non-italic'>
           Contact Us
         </h2>
         <ul>
           <li>
             <a
               href='#'
-              className='font-alegreya non-italic font-bold text-base mt-2 hover:underline'
+              className='mt-2 text-base font-bold font-alegreya non-italic hover:underline'
             >
               0000000
             </a>
@@ -72,13 +72,13 @@ function Footer() {
 export default Footer;
 {
   /* <footer className='bg-black'>
-<div className='container mx-auto flex justify-between items-center '>
-  <div className='pt-20 pb-20 pr-60 pl-60 flex  '>
+<div className='container flex items-center justify-between mx-auto '>
+  <div className='flex pt-20 pb-20 pr-60 pl-60 '>
     <a className='text-lg font-semibold text-white' href='#'>
-      Sound<span className='text-buttonColor font-extrabold'>DZign</span>
+      Sound<span className='font-extrabold text-buttonColor'>DZign</span>
     </a>
 
-    <div className='flex space-x-4 mt-6'>
+    <div className='flex mt-6 space-x-4'>
         <a href=''>
           <img src={fb}></img>
         </a>
@@ -91,7 +91,7 @@ export default Footer;
     </div>
 
     <div className='flex flex-col'>
-          <h3 className='text-buttonColor font-alegreya non-italic font-bold text-lg'>Quick Links</h3>
+          <h3 className='text-lg font-bold text-buttonColor font-alegreya non-italic'>Quick Links</h3>
           <ul className='text-white '>
             <li className='hover:underline'>
               <a href=''>Blog</a>
@@ -102,7 +102,7 @@ export default Footer;
           </ul>
     </div>
     <div className=''>
-    <h3 className='text-buttonColor font-alegreya non-italic font-bold text-lg'>Contact Us</h3>
+    <h3 className='text-lg font-bold text-buttonColor font-alegreya non-italic'>Contact Us</h3>
           <ul className='text-white'>
             <li className='hover:underline'>
               <a href=''>00000000</a>
